@@ -1,0 +1,21 @@
+ul.list-inline {
+      margin-top: 0;
+      margin-bottom: 30px; }
+
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #ffffff;
+    border-radius: 100%;
+    outline: none;
+    background-color: #242627; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #00D9D9; }

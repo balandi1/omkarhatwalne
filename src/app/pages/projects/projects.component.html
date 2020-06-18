@@ -1,0 +1,135 @@
+<div class="content">
+  <div class="row">
+    <div class="col-3">
+    <div class="card">
+      <a (click)="open(project1)">
+      <img class="card-img-top image" src="assets/img/project_arch.jpg" alt="Card image cap">
+      </a>
+        <div class="card-body">
+        <h3 class="card-title">Microprocessor Pipeline Architecture</h3>
+        <p class="card-text">JAVA, ECLIPSE</p>
+        <button type="button" class="btn btn-success" (click)="open(project1)">
+          Read More
+        </button>
+      </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+      <a (click)="open(project2)">
+      <img class="card-img-top image" src="assets/img/project_student.png" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h3 class="card-title">Student Registration System</h3>
+        <p class="card-text">ORACLE, JAVA, NETBEANS</p>
+        <button type="button" class="btn btn-success" (click)="open(project2)">
+          Read More
+        </button>
+      </div>
+    </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <a (click)="open(project3)">
+        <img class="card-img-top image" style="height: 15.65rem;" src="assets/img/project_car.jpg" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3 class="card-title">Automated Parking System</h3>
+          <p class="card-text">ANDROID STUDIO, C++, RASPBERRYPI, IR SENSORS</p>
+          <button type="button" class="btn btn-success" (click)="open(project3)">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <a (click)="open(project4)">
+          <img class="card-img-top image" style="height: 15.65rem;" src="assets/img/project_wallet.jpg" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3 class="card-title">Personal Wallet Blockchain</h3>
+          <p class="card-text">ETHEREUM, SOLIDITY, PRIVATE BLOCKCHAIN</p>
+          <button type="button" class="btn btn-success" (click)="open(project4)">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="more" class="col-lg-12 text-center">
+    <a target="_blank" class="btn btn-success" href="https://github.com/ohatwal1">More Projects</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<ng-template #project1 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Microprocessor Pipeline Architecture</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>1. Implemented simulator for out-of-order execution pipeline. The input of simulator was a sequence of assembly instructions led to cycle by cycle execution.</p>
+    <p>2. Implementation of multiple functional units, load store queue, reorder buffers, unified register file, register renaming, issue queue, and flags.</p>
+    <p>3. Provided support for branching and memory instructions based on custom parameters value.</p>
+  </div>
+  <div class="modal-footer">
+    <a target="_blank" href="https://github.com/ohatwal1/Microprocessor-Pipeline-Simulator" class="btn btn-secondary"><i class="fa fa-github"></i>Github</a>
+  </div>
+</ng-template>
+
+<ng-template #project2 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Student Registration System</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>1. Developed a real-time Java application, supported operations of enrollment and withdrawal of a student, maintained logs of activities, and provided a user-friendly display of student details.</p>
+    <p>2. Devised complex queries using packages and stored procedures, index, views and joins to store data.</p>
+    <p>3. Designed triggers for automated updates of logs on every operation in database.</p>
+  </div>
+  <div class="modal-footer">
+    <a target="_blank" href="https://github.com/ohatwal1/Student_Registration_System" class="btn btn-secondary"><i class="fa fa-github"></i>Github</a>
+  </div>
+</ng-template>
+
+<ng-template #project3 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Automated Parking System</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>1. Created an Android application with multi-client support, to reserve a parking spot with real-time data.</p>
+    <p>2. Time-out functionality and continuous parking status update are incorporated with an interactive and appealing GUI. RaspberryPi, IR Sensors are in place to collect the data from server.</p>
+    <p>3. Request for booking, check availability, display status of request are supported in android GUI.</p>
+  </div>
+  <div class="modal-footer">
+    <a target="_blank" href="https://github.com/ohatwal1/Automated-Parking-System" class="btn btn-secondary"><i class="fa fa-github"></i>Github</a>
+  </div>
+</ng-template>
+
+<ng-template #project4 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Personal Wallet Blockchain</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>1. A Blockchain is a type of diary or spreadsheet containing information about transactions.</p>
+    <p>2. Each transaction generates a hash which is a string of numbers and letters. The hash depends not only on the transaction but on the previous transaction's hash. A small change in a transaction creates a new hash.</p>
+    <p>3. A wallet is a string of numbers and letters, such as 18c177926650e5550973303. This address will appear in various blocks within the Blockchain as transactions take place.</p>
+    <p>4. No visible records of who did what transaction with who, only the number of a wallet.</p>
+  </div>
+  <div class="modal-footer">
+    <a target="_blank" href="https://github.com/ohatwal1/Personal_Wallet_Blockchain" class="btn btn-secondary"><i class="fa fa-github"></i>Github</a>
+  </div>
+</ng-template>
